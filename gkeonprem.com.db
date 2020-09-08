@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@INSOA     localhost. root.localhost. (
+101; Serial
+604800; Refresh
+86400; Retry
+2419200; Expire
+604800 ); Negative Cache TTL
+;
+@INNSlocalhost.
+@INA127.0.0.1
+@INAAAA    ::1
+
+INA10.0.10.6
+*INA10.0.10.6
